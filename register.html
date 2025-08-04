@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>التسجيل - معهد الخوارزمي</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    .main-text {
+      max-width: 900px;
+      margin: 100px auto 20px; 
+      padding-top: 50px; 
+      font-size: 3em;
+      line-height: 1.8;
+      color: #03045e;
+      font-weight: 900;
+      padding: 0 15px;
+      margin-bottom: 20px;
+    }
+
+    .main-text p {
+      margin-bottom: 10px;
+    }
+
+    .page-container {
+      margin-top: 10px;
+    }
+
+    .register-form {
+      margin-top: 20px;
+    }
+
+.social-buttons {
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  z-index: 10999;
+}
+
+.social-buttons a {
+  background: #03045e;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background 0.3s ease;
+}
+
+.social-buttons a:hover {
+  background: #001233;
+}
+
+
+    .register-form input,
+    .register-form select,
+    .register-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #F6F5F3;
+    }
+
+    header {
+      margin-top: 80px; 
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="navbar">
+      <div class="nav-left">
+        <a href="index.html">الرئيسية</a>
+        <a href="register.html">التسجيل</a>
+      </div>
+
+      <div class="nav-center">
+        <p class="logo">معهد الخوارزمي</p>
+      </div>
+
+      <div class="nav-right">
+        <a href="contact.html">تواصل معنا</a>
+        <a href="about.html">عنّا</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1 class="main-text">نموذج التسجيل</h1> 
+    <p>سجل الآن في دورات معهد الخوارزمي المعتمدة</p>
+  </header>
+
+
+  <div class="page-container">
+    <form class="register-form" action="#" method="post">
+      <input type="text" name="name" placeholder="الاسم الكامل" required />
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+      <input type="tel" name="phone" placeholder="رقم الجوال" required pattern="[0-9]{10}" />
+      <select name="course" required>
+        <option value="">اختر الدورة</option>
+        <option value="english">دورة أخصائي مايكروسوفت</option>
+        <option value="computer">دورات اللغة الإنجليزية – من المستوى 1 إلى 12</option>
+        <option value="icdl">دورة إدخال البيانات ومعالجة النصوص</option>
+      </select>
+      <textarea name="note" placeholder="ملاحظات إضافية (اختياري)" rows="4"></textarea>
+      <button type="submit" class="submit-btn">إرسال</button>
+    </form>
+  </div>
+
+
+  <footer class="footer fade-in">
+    &copy; 2025 معهد الخوارزمي. جميع الحقوق محفوظة.
+  </footer>
+
+  <div class="social-buttons">
+    <a href="https://api.whatsapp.com/send?phone=+9660544460046&text=مرحبا" target="_blank" rel="noopener">💬 واتساب</a>
+    <a href="https://www.instagram.com/al_khwarzmi/?igshid=1fqlh1u31ed8w" target="_blank" rel="noopener">📷 إنستغرام</a>
+    <a href="https://x.com/Khwarzm1?s=09" target="_blank" rel="noopener">🐦 X</a>
+    <a href="https://www.youtube.com/channel/UCAKbugblbuJx3lIXigQJcqA" target="_blank" rel="noopener">📺 يوتيوب</a>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
